@@ -12,9 +12,11 @@ include_directories(
     ${CURSES_INCLUDE_DIR}
 )
 
+# Create an executable for demo purpose
 add_executable(display
                src/main.cpp
                src/nc.cpp
 )
 
+# Link ncurses libary with executable
 target_link_libraries(display ${CURSES_LIBRARIES})
